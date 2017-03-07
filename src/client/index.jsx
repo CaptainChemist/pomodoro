@@ -17,6 +17,7 @@ import helloReducer from '../shared/reducer/hello'
 import { APP_CONTAINER_SELECTOR, JSS_SSR_SELECTOR } from '../shared/config'
 import { isProd } from '../shared/util'
 
+
 window.jQuery = $
 window.Tether = Tether
 require('bootstrap')
