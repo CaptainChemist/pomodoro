@@ -1,5 +1,4 @@
 import {
-  sayHello,
   sayHelloAsyncRequest,
   sayHelloAsyncSuccess,
   sayHelloAsyncFailure,
@@ -18,10 +17,10 @@ test('handle default', () => {
   expect(helloState.get('messageAsync')).toBe('Initial reducer message for async call')
 })
 
-test('handle SAY_HELLO', () => {
-  helloState = helloReducer(helloState, sayHello('Test'))
-  expect(helloState.get('message')).toBe('Test')
-})
+// test('handle SAY_HELLO', () => {
+//   helloState = helloReducer(helloState, sayHello('Test'))
+//   expect(helloState.get('message')).toBe('Test')
+// })
 
 test('handle SAY_HELLO_ASYNC_REQUEST', () => {
   helloState = helloReducer(helloState, sayHelloAsyncRequest())
